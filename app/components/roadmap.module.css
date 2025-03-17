@@ -118,7 +118,8 @@
 }
   
 .toggleButton {
-    color: #b4ff00;
+    color: #BFF764;
+    /* color: #b4ff00; */
     font-size: 16px;
     font-weight: 700;
     display: flex;
@@ -127,6 +128,11 @@
     margin-right: auto;
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+.toggleButton:hover {
+    color: #8bc407;
+
 }
   
 .stepDetails {
