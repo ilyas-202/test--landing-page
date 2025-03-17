@@ -1,0 +1,239 @@
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+}
+  
+
+  
+.telegramSection {
+    padding: 64px 0;
+    color: white;
+}
+  
+.grid {
+    max-width: 1260px;
+    min-height: 497px;
+    display: grid;
+    gap: 48px;
+    padding: 80px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, 
+                rgba(0, 0, 0, 0.07) 0px 2px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 4px, 
+                rgba(0, 0, 0, 0.07) 0px 8px 8px, 
+                rgba(68, 66, 66, 0.07) 0px 16px 16px;
+}
+
+.grid::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, rgba(78, 78, 78, 0.685), rgba(31, 30, 30, 0.575));
+    -webkit-mask: linear-gradient(#807f7f 0 0) content-box, linear-gradient(#8f8d8d 0 0);
+    mask: linear-gradient(#cac7c7 0 0) content-box, linear-gradient(#a09e9e 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+  
+@media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+  
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+  
+.title {
+    color: #BFF764;
+    font-size: 48px;
+    font-weight: 700;
+}
+  
+@media (max-width: 660px) {
+    .title {
+      font-size: 28px;
+    }
+}
+  
+.description {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+  
+@media (max-width: 660px) {
+    .description {
+      font-size: 15px;
+    }
+}
+  
+.button {
+    width: 286px;
+    height: 60px;
+    border: 1px solid #BFF764;
+    background: none;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 18px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #BFF764;
+    font-size: 15px;
+    font-weight: 400;
+}
+  
+.button:hover {
+    background-color: #b4ff00;
+    color: black;
+}
+
+.tg {
+    margin-left: 5px;
+    background: none;
+}
+
+
+  
+.mockupContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+  
+.phoneFrame {
+    position: relative;
+    width: 240px;
+    height: 480px;
+    background: #1c1c1e;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+  
+@media (min-width: 640px) {
+    .phoneFrame {
+      width: 300px;
+      height: 600px;
+      border-radius: 40px;
+    }
+}
+  
+.notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 20px;
+    background: black;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+  
+.screen {
+    position: absolute;
+    inset: 8px;
+    background: #17212b;
+    border-radius: 25px;
+    overflow: hidden;
+}
+  
+@media (min-width: 640px) {
+    .screen {
+      border-radius: 35px;
+    }
+}
+  
+.header {
+    background: #17212b;
+    padding: 8px;
+    border-bottom: 1px solid #323232;
+}
+  
+.headerTitle {
+    color: white;
+    font-size: 14px;
+    background: none;
+}
+  
+@media (min-width: 640px) {
+    .headerTitle {
+      font-size: 18px;
+    }
+}
+  
+.onlineStatus {
+    color: #a1a1aa;
+    font-size: 10px;
+    background: none;
+}
+  
+@media (min-width: 640px) {
+    .onlineStatus {
+      font-size: 12px;
+    }
+}
+  
+.messages {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: none;
+}
+  
+@media (min-width: 640px) {
+    .messages {
+      padding: 16px;
+      gap: 12px;
+    }
+}
+  
+.message {
+    background: #2b5278;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    max-width: 80%;
+    font-size: 12px;
+}
+  
+@media (min-width: 640px) {
+    .message {
+      font-size: 14px;
+    }
+}
+  
+.glowEffect {
+    position: absolute;
+    inset: -16px;
+    background: #b4ff00;
+    opacity: 0.1;
+    filter: blur(40px);
+    border-radius: 60px;
+    z-index: -1;
+}
+  
+.footer {
+    margin-top: 64px;
+    text-align: center;
+    color: #71717a;
+    font-size: 12px;
+}
+  
+@media (min-width: 640px) {
+    .footer {
+      font-size: 14px;
+    }
+}

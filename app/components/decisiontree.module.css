@@ -1,0 +1,115 @@
+.wrapper {
+    padding: 64px 0;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .title {
+    color: #b4ff00;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  
+  .tree {
+    position: relative;
+    max-width: 600px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 640px) {
+    .tree {
+      height: 600px;
+    }
+  }
+  
+  .svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .question {
+    position: absolute;
+    transform: translateX(-50%);
+    max-width: 300px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .questionText {
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #d4d4d8;
+  }
+  
+  .active .questionText {
+    background-color: rgba(24, 24, 27, 0.5);
+  }
+  
+  .orText {
+    color: #a1a1aa;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  
+  .outcomes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .outcomes {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 0;
+    }
+  }
+  
+.success {
+    background-color: #BFF764;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 202px;
+    height: 172px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+  
+.failure {
+    color: #FF8058;
+    border: 1px solid rgba(255, 165, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 202px;
+    height: 84px;
+}
+
+.url {
+  background: none;
+}
+
+.urlText {
+  background: none;
+}
+  
