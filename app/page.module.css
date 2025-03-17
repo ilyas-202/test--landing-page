@@ -412,9 +412,14 @@
 }
 
 .footerCont {
-  max-width: 1920px;
+  margin: auto;
+  max-width: 1260px;
   height: 80px;
-  border-top: 1px solid ;
+  /* border-top: 1px solid ; */
+}
+
+.line {
+  border: 0.5px solid;
 }
 
 .footer {

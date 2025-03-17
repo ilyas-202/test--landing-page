@@ -139,6 +139,7 @@ export default function Portfolio() {
       </section>
 
       <div className={styles.footerCont}>
+        <div className={styles.line}></div>
         <div className={styles.footer}>
           <p>2024 © Suleyman</p>
           <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className={styles.scrollTopButton}>
