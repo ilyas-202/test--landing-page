@@ -147,6 +147,7 @@
     background: #17212b;
     border-radius: 25px;
     overflow: hidden;
+    border: #b4ff00;
 }
   
 @media (min-width: 640px) {
@@ -154,13 +155,47 @@
       border-radius: 35px;
     }
 }
-  
+
+
 .header {
-    background: #17212b;
+    background: #28394b;
     padding: 8px;
-    border-bottom: 1px solid #323232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-  
+
+.back {
+    color: #6399fc;
+    background: none;
+}
+
+.back p {
+    font-size: 13px;
+    background: none;
+}
+
+.midle {
+    background: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo p {
+    font-size: 10px;
+}
+
 .headerTitle {
     color: white;
     font-size: 14px;
@@ -236,4 +271,18 @@
     .footer {
       font-size: 14px;
     }
+}
+
+.name {
+    color: #6399fc;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.messageText {
+    background: none;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
 }

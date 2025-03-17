@@ -30,16 +30,32 @@ export function TelegramReviews() {
 
               <div className={styles.screen}>
                 <div className={styles.header}>
-                  <div className={styles.headerTitle}>Suleyman O'Brien</div>
-                  <div className={styles.onlineStatus}>online</div>
+
+                  <div className={styles.back}>
+                    <p>Назад</p>
+                  </div>
+
+                  <div className={styles.midle}>
+                    <p className={styles.headerTitle}>Suleyman | Отзывы</p>
+                    <p className={styles.onlineStatus}>5 участников</p>
+                  </div>
+
+                  <div className={styles.logo}>
+                    <p>Logo</p>
+                  </div>
                 </div>
 
                 <div className={styles.messages}>
                   <div className={styles.message}>
-                    Привет всем! Хочу поделиться опытом работы с ментором. Очень помог с подготовкой...
-                  </div>
-                  <div className={styles.message}>
-                    За 2 месяца удалось пройти путь от базовых знаний до уверенного выполнения тестовых...
+                    <p className={styles.name}>Anton</p>
+                    <p className={styles.messageText}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit pariatur eligendi, ad obcaecati nesciunt porro illo incidunt natus laborum dolores similique tempora rem quia blanditiis magni quaerat ex omnis facilis.
+                    </p>
+
+                    <p className={styles.messageText}>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste, soluta voluptate minima, quis quae unde hic impedit est harum, asperiores eius itaque temporibus tempore ullam. Enim, voluptatibus? Consequatur, quaerat.
+                    </p>
+
                   </div>
                 </div>
               </div>
