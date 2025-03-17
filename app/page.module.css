@@ -359,12 +359,12 @@
   }
   .statCard:first-child {
     top: -130px; 
-    left: -6px;
+    left: 5px;
   }
   
   .statCard:last-child {
     bottom: -130px;
-    right: -6px;
+    right: 5px;
   }
   
 }
