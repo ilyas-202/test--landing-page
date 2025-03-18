@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Button from "@/app/components/ui/button";
-import { Roadmap } from "@/app/components/roadmap";
-import { Tariff } from "@/app/components/tariff";
-import { DecisionTree } from "@/app/components/decision-tree";
-import { AdditionalServices } from "@/app/components/additional-services";
-import { TelegramReviews } from "@/app/components/telegram-reviews";
+import { Roadmap } from "@/app/components/roadmap/roadmap";
+import { Tariff } from "@/app/components/tariff/tariff";
+import { DecisionTree } from "@/app/components/decisionTree/decision-tree";
+import { AdditionalServices } from "@/app/components/additional/additional-services";
+import { TelegramReviews } from "@/app/components/telegramreviews/telegram-reviews";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { AddBenefits } from "./components/addBenefits";
+import { AddBenefits } from "@/app/components/addBenefits/addBenefits";
 
 export default function Portfolio() {
   const [scrollY, setScrollY] = useState(0);
